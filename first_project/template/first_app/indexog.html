@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Django l2</title>
+
+  </head>
+  <body>
+    <h1>hi welcome</h1>
+    <h2>here are ur acc records</h2>
+    <div class="djangotwo">
+      <form  method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" name="" value="Submit">
+
+      </form>
+
+    </div>
+
+
+  </body>
+</html>

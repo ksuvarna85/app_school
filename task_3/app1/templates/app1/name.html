@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form   method="post">
+      {% csrf_token %}
+      <label for="nam">Please Enter your name</label>
+      <input  id='nam' type="text" name="name_sent">
+    </form>
+    {% if name %}
+    <p>hi {{name}} welcone to {{country}}</p>
+    <p></p>
+    <a href="{% url 'app1:map' %}">please click here to check your current location</a>
+    {% endif %}
+  </body>
+</html>
